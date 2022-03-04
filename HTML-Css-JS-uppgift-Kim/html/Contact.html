@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kims webpage</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <script>
+
+      var seq = "1337"
+      var input = ""
+      window.addEventListener("keypress", function(e) {
+          input += String.fromCharCode(e.keyCode)
+      
+          for (var i = 0; i < seq.length; i++) {
+              if (input[i] != seq[i] && input[i] != undefined) {
+                  input = ""
+              }
+          }
+      
+          if (input == seq) {
+              alert("Elite Has Been Achieved!!")
+      
+              input = ""
+          }
+      })
+      
+          </script>
+    <header>
+      <h1 class="logo">Kim Wiklund</h1>
+      <nav>
+        <ul>
+          <li><a href="Home.html">Startsida</a></li>
+          <li><a href="AboutMe.html">Om mig</a></li>
+          <li><a href="Portfolio.html">Portfolio</a></li>
+          <li><a href="CV.html">CV</a></li>
+          <li><a href="Contact.html">Kontakt</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+
+
+<div class="content">
+<div class="leftsection">
+<h1>Kontakt</h1>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus ullam odio doloribus nostrum magni autem facere ducimus culpa nobis? Voluptatibus suscipit dicta numquam eligendi nobis porro unde sapiente commodi. </p>
+
+</div>
+<div class="rightsection">
+    <img src="/images/Telefon).jpg">
+    <p>Den första telefonen.</p>
+
+</div>
+</div>
+
+
+</body>
+
+
+<footer id="footer">
+  <p style="text-align:center;">copyright <span id="secret1">Kim</span> @ 2022</p>
+  <script>
+    document.getElementById("secret1").addEventListener("click", function changecolor()
+    {
+      var element = document.getElementById("footer");
+      element.classList.toggle("secret1change");
+     
+    });
+
+
+
+  </script>
+</footer>
+</html>
